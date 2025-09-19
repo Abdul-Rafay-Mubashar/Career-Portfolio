@@ -1,0 +1,113 @@
+.about-container-global {
+    /* background-image: linear-gradient( to bottom , #2c2c2c , #750075); */
+        /* background-image: url('../images/Paper.png');
+    background-repeat: repeat;
+    background-size: 400px, 400px; */
+background: linear-gradient(to bottom, #fbedd2, #f5e0a5, #ffffff);    height: 1150px;
+}
+
+.about-container {
+    background: url('../images/statueFace.png') left top no-repeat;
+    background-size: 365px;
+    max-width: 1200px;
+    margin: auto;
+    display: block;
+    background-position: left;
+}
+
+.about-heading{
+    font-family: Playfair;
+    font-weight: 700;
+    font-size: 13vw;
+    color: #2B2B2B;
+    padding-top:10px;
+    
+}
+
+.about-main-grid {
+    height: 820px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.about-p {
+    height:100%;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 3px;
+    font-family: 'Ralewaylight';
+    font-size: 18px;
+    font-weight: 100;
+    color: #374745;
+    padding: 0 10px 0 10px;
+     margin-left: -20px;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    text-align: justify;
+    line-height: 1.5;
+   
+}
+
+.about-first-para,.about-second-para{
+    padding: 0px 0 20px 0;
+}
+
+.about-first-para{
+    position: relative;
+
+    right: -100px;
+}
+
+@media screen and (max-width: 992px) {
+    .about-first-para{
+      position: relative;
+              color: rgb(255, 130, 6);
+
+      right: -100px;
+    }
+    .about-second-para{
+              color: rgb(224, 123, 22);
+
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .about-first-para{
+                color: peru;
+
+      position: relative;
+      right: -150px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about-container {
+        background-size: 300px;
+    }
+
+    .about-first-para{
+      position: relative;
+      right: 0;
+    }
+    .about-p {
+        padding: 300px 20px 0 20px;
+        font-size: 15px;
+    }
+    .about-heading {
+        font-size: 100px
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .about-p {
+        padding: 150px 20px 0 20px;
+        font-size: 15px;
+    }
+}

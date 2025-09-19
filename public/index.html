@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Software Engineer Abdul Rafay"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Title -->
+    <title>Web Developer Abdul Rafay - Portfolio</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/css/base.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+    <!-- Check for CSS Variables support -->
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var style = document.createElement("style");
+        style.innerHTML = ":root { --tmp-var: bold; }";
+        document.head.appendChild(style);
+        var supports = !!(
+          window.CSS &&
+          window.CSS.supports &&
+          window.CSS.supports("font-weight", "var(--tmp-var)")
+        );
+        style.parentNode.removeChild(style);
+        return supports;
+      };
+      if (!supportsCssVars()) {
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+      }
+    </script>
+  </head>
+
+  <body class="loading">
+    <main>
+      <div id="root"></div>
+      <div class="grid-wrap">
+        <div class="grid">
+          <a href="#" class="grid__item">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+              <img class="grid__item-img" src="%PUBLIC_URL%/img/6.webp" alt="Some image" />
+            </div>
+            <h3 class="grid__item-title">Tapp</h3>
+            <h4 class="grid__item-number">Tapp</h4>
+          </a>
+          <a href="#" class="grid__item">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+              <img class="grid__item-img" src="%PUBLIC_URL%/img/2.webp" alt="Some image" />
+            </div>
+            <h3 class="grid__item-title">Augersoft</h3>
+            <h4 class="grid__item-number">Augersoft</h4>
+          </a>
+          <a href="#" class="grid__item">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+              <img
+                class="grid__item-img"
+                src="%PUBLIC_URL%/img/Audio-NLP-Portfolio.png"
+                alt="Some image"
+              />
+            </div>
+            <h3 class="grid__item-title">Audio NLP</h3>
+            <h4 class="grid__item-number">Audio NLP</h4>
+          </a>
+          <a href="#" class="grid__item">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+              <img
+                class="grid__item-img"
+                src="%PUBLIC_URL%/img/LinkedInScraper-Portfolio.png"
+                alt="Some image"
+              />
+            </div>
+            <h3 class="grid__item-title">Link Scrape</h3>
+            <h4 class="grid__item-number">Link Scrape</h4>
+          </a>
+
+          <a href="#" class="grid__item">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+              <img class="grid__item-img" src="%PUBLIC_URL%/img/Dev-Track-Task-Wallet.png" alt="Some image" />
+            </div>
+            <h3 class="grid__item-title">DevTaskTrack</h3>
+            <h4 class="grid__item-number">DevTaskTrack</h4>
+          </a>
+          <a href="#" class="grid__item">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+              <img
+                class="grid__item-img"
+                src="%PUBLIC_URL%/img/Germen-Car-Scraper.png"
+                alt="Some image"
+              />
+            </div>
+            <h3 class="grid__item-title">AutoMine</h3>
+            <h4 class="grid__item-number">AutoMine</h4>
+          </a>
+
+          <a href="#" class="grid__item">
+            <div class="grid__item-bg"></div>
+            <div class="grid__item-wrap">
+              <img
+                class="grid__item-img"
+                src="%PUBLIC_URL%/img/Doc-Alert-Portfolio.png"
+                alt="Some image"
+              />
+            </div>
+            <h3 class="grid__item-title">DocAlert</h3>
+            <h4 class="grid__item-number">DocAlert</h4>
+          </a>
+        </div>
+      </div>
+      <!-- /grid-wrap -->
+      <div class="content">
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img class="content__item-img" src="%PUBLIC_URL%/img/6.webp" alt="Some image" />
+            <h2 class="content__item-title">Tapp Event Solutions</h2>
+          </div>
+          <h3 class="content__item-subtitle">
+            "A Responsive and Scalable Event Management Platform "
+          </h3>
+          <h3 class="content__item-subtitle2">Tech Used</h3>
+          <div class="flex-box-tech">
+            <div class="flex-box-tech-box">React</div>
+            <div class="flex-box-tech-box">Rails</div>
+            <div class="flex-box-tech-box">Tailwind</div>
+            <div class="flex-box-tech-box">Postgress</div>
+          </div>
+          <div class="content__item-text">
+            <p>
+              In spearheading the development of Tapp Event Solutions, my
+              technical contributions were multifaceted and instrumental in
+              meeting the client's objectives. The careful selection of
+              technologies was foundational to the project's success, with React
+              JS and Next JS chosen for the frontend, ensuring a responsive and
+              adaptable user interface. Additionally, the incorporation of
+              Electron JS extended the application's reach across various
+              platforms, accommodating both web and mobile users seamlessly. On
+              the backend, Ruby on Rails was employed for its efficiency and
+              convention-over-configuration principles. This facilitated rapid
+              development, maintaining a clean and scalable codebase. Devise
+              auth was integrated for secure user authentication, laying the
+              groundwork for personalized user experiences and robust permission
+              management. The implementation of a credit-based system, a core
+              feature of Tapp, demanded a nuanced understanding of financial
+              transactions. Integration with popular payment gateways and the
+              use of JSON Web Tokens (JWT) bolstered the development of a secure
+              and efficient credit system, contributing significantly to the
+              platform's functionality. Real-time communication, a crucial
+              aspect for user engagement during events, was achieved through the
+              integration of WebSockets. This facilitated the prompt delivery of
+              notifications, keeping users informed about their orders and
+              pertinent event updates. Testing and quality assurance were
+              prioritized through Test Driven Development (TDD) practices,
+              employing tools like React Testing Library, Capybara, Cypress, and
+              Jest. This meticulous approach ensured the reliability and
+              bug-free performance of every component within the system. To
+              cater to a global audience, internationalization (i18n) and
+              localization (l10n) features were implemented. This strategic move
+              enhanced the platform's accessibility by adapting it to diverse
+              languages and cultural contexts. The integration of OAuth,
+              JSON:API, and RESTful APIs was seamlessly executed, fostering
+              interoperability with third-party services. This not only expanded
+              the platform's functionality but also enriched the user experience
+              by incorporating additional services. Continuous
+              Integration/Continuous Deployment (CI/CD) pipelines were
+              established to automate testing and deployment processes,
+              optimizing development efficiency and ensuring smooth rollouts of
+              updates and new features. In summary, my technical prowess played
+              a pivotal role in the end-to-end development of Tapp Event
+              Solutions, delivering a scalable, secure, and user-friendly
+              platform that met and exceeded the client's expectations in the
+              dynamic landscape of modern event management.
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img class="content__item-img" src="%PUBLIC_URL%/img/2.webp" alt="Some image" />
+            <h2 class="content__item-title">Augersoft</h2>
+          </div>
+
+          <h3 class="content__item-subtitle">
+            "Innovative Solutions for Digital Transformation."
+          </h3>
+          <h3 class="content__item-subtitle2">Tech Used</h3>
+          <div class="flex-box-tech">
+            <div class="flex-box-tech-box">React</div>
+            <div class="flex-box-tech-box">Node</div>
+            <div class="flex-box-tech-box">Tailwind</div>
+            <div class="flex-box-tech-box">MongoDb</div>
+          </div>
+          <div class="content__item-text">
+            <p>
+              I took on the challenge of completely redesigning and rebuilding
+              the Augersoft website using the MERN stack, effectively
+              revitalizing their online presence with a modern, user-friendly
+              experience that highlights their expertise in cutting-edge
+              technologies and mobile solutions. I seamlessly integrated
+              React.js to create a dynamic and engaging interface, coupled with
+              Node.js for efficient server-side scripting and API development,
+              and MongoDB for effortless data management. I navigated the
+              complexities of presenting diverse technical information in a
+              clear and accessible way, while also crafting a UI that caters to
+              both technical and non-technical audiences. The resulting
+              responsive design adapts flawlessly across devices, leading to
+              increased website traffic, user engagement, and lead generation.
+              This project serves as a powerful demonstration of my ability to
+              leverage full-stack development with the MERN stack to construct
+              impactful web applications.
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="%PUBLIC_URL%/img/Audio-NLP-Portfolio.png"
+              alt="Some image"
+            />
+            <h2 class="content__item-title">Audio NLP</h2>
+          </div>
+          <h3 class="content__item-subtitle">
+            "AI-powered Learning Management Platform"
+          </h3>
+          <h3 class="content__item-subtitle2">Tech Used</h3>
+          <div class="flex-box-tech">
+            <div class="flex-box-tech-box">React</div>
+            <div class="flex-box-tech-box">FastAPI</div>
+            <div class="flex-box-tech-box">MySQL</div>
+            <div class="flex-box-tech-box">OpenAI Models</div>
+            <div class="flex-box-tech-box">sPacy</div>
+          </div>
+          <div class="content__item-text">
+            <p>
+              Our AI-powered Learning Management Platform revolutionizes the way
+              teachers and students interact with educational content. With
+              dedicated Teacher and Student panels, the system ensures seamless
+              collaboration, automated note creation, and intelligent quiz
+              generation. The Teacher Panel empowers educators to record
+              lectures in there native language, upload multiple audio
+              recordings, and automatically generate structured notes in Word
+              and PDF format using advanced AI models in English and can also
+              edit these notes which can also change in pdf file of that notes.
+              Teachers can also generate quizzes directly from these notes, with
+              full control to edit, schedule, and notify students. The platform
+              provides tools to manage courses, view reports, and download
+              AI-generated notes, ensuring flexibility and efficiency. The
+              Student Panel offers an intuitive interface for accessing course
+              materials, downloading lecture notes, and attempting quizzes.
+              Students receive real-time notifications for scheduled quizzes and
+              updates, ensuring they never miss important assessments. Completed
+              quizzes generate detailed performance reports, allowing students
+              to track their progress across courses.
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="%PUBLIC_URL%/img/LinkedInScraper-Portfolio.png"
+              alt="Some image"
+            />
+            <h2 class="content__item-title">Link Scrape</h2>
+          </div>
+          <h3 class="content__item-subtitle">
+            "LinkedIn Data Scraping Platform"
+          </h3>
+          <div class="flex-box-tech">
+            <div class="flex-box-tech-box">Vue</div>
+            <div class="flex-box-tech-box">FastAPI</div>
+            <div class="flex-box-tech-box">Postgress</div>
+            <div class="flex-box-tech-box">Bootstrap</div>
+            <div class="flex-box-tech-box">Playwright</div>
+            <div class="flex-box-tech-box">Gologin Browser</div>
+          </div>
+          <div class="content__item-text">
+            <p>
+              Our LinkedIn Sales Navigator Scraper provides an intelligent and
+              automated solution for extracting valuable business insights from
+              LinkedIn. Designed for efficiency and scalability, the platform
+              processes both person (PURLs) and company (CURLs) links,
+              delivering accurate, structured data directly into the database.
+              The system enables users to create and manage campaigns by
+              uploading URL files along with campaign details such as name,
+              type, and status (Pending, Scheduled). Each campaign can be
+              paused, interrupted, edited (if pending), or deleted, user can
+              also change pending status to inProgress giving users full control
+              over their scraping workflows. Campaign results are securely
+              stored in the database and can be conveniently downloaded in CSV
+              format for further analysis or integration. With its streamlined
+              interface and robust backend, the scraper ensures seamless
+              handling of large-scale LinkedIn searches—such as finding
+              professionals (e.g., Python developers) or exploring target
+              companies. By automating data collection and campaign management,
+              it minimizes manual effort while maximizing accuracy and
+              productivity. This feature-rich, dynamic solution empowers
+              businesses, recruiters, and sales professionals to optimize lead
+              generation, track campaigns effectively, and unlock the full
+              potential of LinkedIn Sales Navigator.
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img class="content__item-img" src="%PUBLIC_URL%/img/Dev-Track-Task-Wallet.png" alt="Some image" />
+            <h2 class="content__item-title">Dev Track Task Wallet</h2>
+          </div>
+          <h3 class="content__item-subtitle">"Task Tracking Mobie App"</h3>
+          <div class="flex-box-tech">
+            <div class="flex-box-tech-box">React Native</div>
+            <div class="flex-box-tech-box">Django</div>
+            <div class="flex-box-tech-box">Postgress</div>
+          </div>
+          <div class="content__item-text">
+            <p>
+              Our Developer Task Wallet is a productivity-focused application
+              designed to streamline project and task tracking for industrial
+              use. Acting like a digital wallet, the system organizes projects,
+              developer assignments, and task progress in one centralized
+              platform. Developers can log their activities with accurate time
+              records, ensuring transparency and accountability in every task.
+              The app provides a clear overview of ongoing and completed
+              projects, enabling managers to monitor productivity, track
+              timelines, and optimize resource allocation. With its intuitive
+              interface and robust logging features, the system replaces
+              scattered spreadsheets and manual tracking with a secure,
+              reliable, and scalable solution. Whether used for individual
+              developers or across teams, the Task Wallet improves workflow
+              efficiency, enhances collaboration, and ensures all development
+              efforts are recorded and measurable.
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="%PUBLIC_URL%/img/Germen-Car-Scraper.png"
+              alt="Some image"
+            />
+            <h2 class="content__item-title">AutoMine</h2>
+          </div>
+          <h3 class="content__item-subtitle">"Script For Car Data Scraping"</h3>
+          <div class="flex-box-tech">
+            <div class="flex-box-tech-box">Python</div>
+            <div class="flex-box-tech-box">Scraper API</div>
+            <div class="flex-box-tech-box">Beautiful Soup</div>
+
+          </div>
+          <div class="content__item-text">
+            <p>
+              Our German site Car Scraper robust data extraction solution
+              designed to collect detailed automobile information from German
+              car platforms. The system operates in two phases to ensure
+              comprehensive coverage: API-Based Scraping – The scraper connects
+              directly to the platform’s API, retrieving structured vehicle data
+              efficiently and accurately. Website Scraping – Using specific
+              search parameters, the scraper navigates the site to extract
+              additional listings and details not fully exposed through the API.
+              This two-phase approach guarantees high data completeness,
+              combining the speed of API access with the depth of web scraping.
+              The results are processed, structured, and stored for easy
+              analysis or integration into CSV file.
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+
+        <div class="content__item">
+          <div class="content__item-intro">
+            <img
+              class="content__item-img"
+              src="%PUBLIC_URL%/img/Doc-Alert-Portfolio.png"
+              alt="Some image"
+            />
+            <h2 class="content__item-title">Doc Alert</h2>
+          </div>
+          <h3 class="content__item-subtitle">
+            "Automation System for making alert on new appontiment"
+          </h3>
+          <div class="flex-box-tech">
+            <div class="flex-box-tech-box">Python</div>
+            <div class="flex-box-tech-box">Playwright</div>
+            <div class="flex-box-tech-box">Open AI</div>
+            <div class="flex-box-tech-box">AWS Lambda</div>
+          </div>
+          <div class="content__item-text">
+            <p>
+              Our Medical Request Automation System streamlines the process of
+              handling patient requests by integrating AI-based CAPTCHA solving
+              with intelligent task automation. The system automatically logs
+              into the portal, processes image-based numeric CAPTCHAs through an
+              AI model, and seamlessly navigates to the request management
+              section. When a new request is added, the platform triggers an
+              email notification to the assigned doctor, ensuring real-time
+              updates and eliminating delays. This reduces manual effort,
+              minimizes errors, and enhances workflow efficiency. By combining
+              AI-driven image recognition, task automation, and email
+              integration, the system ensures secure, reliable, and scalable
+              performance. Designed for healthcare environments, it optimizes
+              request handling, improves communication between patients and
+              doctors, and significantly accelerates response times.
+            </p>
+          </div>
+        </div>
+        <!-- /content__item -->
+
+        <button class="content__close">Close</button>
+        <svg class="content__indicator icon icon--caret">
+          <use xlink:href="#icon-caret"></use>
+        </svg>
+      </div>
+      <div id="root2"></div>
+    </main>
+    <script src="%PUBLIC_URL%/js/imagesloaded.pkgd.min.js"></script>
+    <script src="%PUBLIC_URL%/js/masonry.pkgd.min.js"></script>
+    <script src="%PUBLIC_URL%/js/charming.min.js"></script>
+    <script src="%PUBLIC_URL%/js/TweenMax.min.js"></script>
+    <script src="%PUBLIC_URL%/js/demo.js"></script>
+  </body>
+</html>
