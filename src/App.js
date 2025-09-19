@@ -13,14 +13,12 @@ import ContactUs from "./components/contactus/ContactUs";
 // import VideoPopup from "./components/videoPopup/VideoPopup";
 import Footer from "./components/footer/Footer.js";
 
-import Chat from "./components/chatbox/Chat.js";
 const App = () => {
   return (
     <>
       <div className="App">
         <div className="">
           <About />
-          <Chat/>
           <Skill />
           <ContactUs />
           <Footer/>
