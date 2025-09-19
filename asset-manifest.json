@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Career-Portfolio/static/css/main.7c35f268.css",
+    "main.js": "/Career-Portfolio/static/js/main.2d998282.js",
+    "static/js/787.7da95b79.chunk.js": "/Career-Portfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/Raleway-Thin.woff": "/Career-Portfolio/static/media/Raleway-Thin.48b7509c5e967567d507.woff",
+    "static/media/brain.png": "/Career-Portfolio/static/media/brain.b2fb25cb5e336b8ebc4f.png",
+    "static/media/city.jpg": "/Career-Portfolio/static/media/city.cffd0d3e142f2e5912f3.jpg",
+    "static/media/Green-Version.png.png": "/Career-Portfolio/static/media/Green-Version.png.42b06b5daada5713c98a.png",
+    "static/media/Paper.png": "/Career-Portfolio/static/media/Paper.b5f9eb3f379bf586e639.png",
+    "static/media/download.png": "/Career-Portfolio/static/media/download.3fd45e4605229d7c00b7.png",
+    "static/media/email.png": "/Career-Portfolio/static/media/email.a89f6ae72aeeccaddf28.png",
+    "static/media/location.png": "/Career-Portfolio/static/media/location.d21d260974d18d94ecdd.png",
+    "static/media/statueFace.png": "/Career-Portfolio/static/media/statueFace.a66d60ed4abb2ae6bf7d.png",
+    "static/media/star.png": "/Career-Portfolio/static/media/star.09fe2829aaea7d25c206.png",
+    "static/media/Raleway-Thin.woff2": "/Career-Portfolio/static/media/Raleway-Thin.0d43e578b29e331c7bd1.woff2",
+    "static/media/Raleway-Bold.woff": "/Career-Portfolio/static/media/Raleway-Bold.24df9add62b475756c3d.woff",
+    "static/media/Raleway-LightItalic.woff": "/Career-Portfolio/static/media/Raleway-LightItalic.50417b38c708ce7d1655.woff",
+    "static/media/Raleway-Light.woff": "/Career-Portfolio/static/media/Raleway-Light.dcd4de5d34241ee395ef.woff",
+    "static/media/VarelaRound-Regular.woff": "/Career-Portfolio/static/media/VarelaRound-Regular.78d2a3e3b6a262378ee3.woff",
+    "static/media/Raleway-Bold.woff2": "/Career-Portfolio/static/media/Raleway-Bold.0ec2e848783463e7ebfa.woff2",
+    "static/media/MontaguSlabSemiBold.woff": "/Career-Portfolio/static/media/MontaguSlabSemiBold.a5c35607565880fbe85c.woff",
+    "static/media/AzeretMono-VariableFont_wght.woff": "/Career-Portfolio/static/media/AzeretMono-VariableFont_wght.95ebfc58d85427ec84fd.woff",
+    "index.html": "/Career-Portfolio/index.html",
+    "main.7c35f268.css.map": "/Career-Portfolio/static/css/main.7c35f268.css.map",
+    "main.2d998282.js.map": "/Career-Portfolio/static/js/main.2d998282.js.map",
+    "787.7da95b79.chunk.js.map": "/Career-Portfolio/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c35f268.css",
+    "static/js/main.2d998282.js"
+  ]
+}
