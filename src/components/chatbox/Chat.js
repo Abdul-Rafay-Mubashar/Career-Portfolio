@@ -301,6 +301,8 @@ try {
       ...prev,
       { role: "assistant", content: "sorry for now i can not answer you" },
     ]);
+        setMessages((prev) => [...prev, { text: answer, sender: "assistant" }]);
+
     return
 
 }
@@ -310,7 +312,10 @@ try {
       { role: "assistant", content: answer },
     ]);
     setMessages((prev) => [...prev, { text: answer, sender: "assistant" }]);
+          setTyping(false);
+
     return answer;
+    
   };
 
   const sendMessage = async () => {
