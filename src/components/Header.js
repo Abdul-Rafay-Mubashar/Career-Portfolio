@@ -44,7 +44,7 @@ const Header = () => {
 
               <div className="link-container">
                 <a
-                  href="https://www.linkedin.com/in/abdul-rafay-mubashar-ai-engineer/"
+                  href="https://www.linkedin.com/in/abdul-rafay-mubashar-software-engineer/"
                   target="_blank"
                 >
                   <div className="link-boxes">LINKEDIN</div>

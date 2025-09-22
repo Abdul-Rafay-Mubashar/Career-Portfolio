@@ -79,7 +79,7 @@ const ContactUs = () => {
           <div class="social-media">
             <div class="social-icons">
               <a
-                  href="https://www.linkedin.com/in/abdul-rafay-mubashar-ai-engineer/"
+                  href="https://www.linkedin.com/in/abdul-rafay-mubashar-software-engineer/"
                   target="_blank"
               >
                 {/* <h1 class="fab fa-linkedin-in"></h1> */}
