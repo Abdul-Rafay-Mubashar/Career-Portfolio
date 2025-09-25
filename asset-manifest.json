@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Career-Portfolio/static/css/main.8015fc65.css",
-    "main.js": "/Career-Portfolio/static/js/main.99c4c18b.js",
+    "main.css": "/Career-Portfolio/static/css/main.34b03acf.css",
+    "main.js": "/Career-Portfolio/static/js/main.bbd87fd3.js",
     "static/js/787.7da95b79.chunk.js": "/Career-Portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/Raleway-Thin.woff": "/Career-Portfolio/static/media/Raleway-Thin.48b7509c5e967567d507.woff",
     "static/media/brain.png": "/Career-Portfolio/static/media/brain.b2fb25cb5e336b8ebc4f.png",
@@ -22,12 +22,12 @@
     "static/media/MontaguSlabSemiBold.woff": "/Career-Portfolio/static/media/MontaguSlabSemiBold.a5c35607565880fbe85c.woff",
     "static/media/AzeretMono-VariableFont_wght.woff": "/Career-Portfolio/static/media/AzeretMono-VariableFont_wght.95ebfc58d85427ec84fd.woff",
     "index.html": "/Career-Portfolio/index.html",
-    "main.8015fc65.css.map": "/Career-Portfolio/static/css/main.8015fc65.css.map",
-    "main.99c4c18b.js.map": "/Career-Portfolio/static/js/main.99c4c18b.js.map",
+    "main.34b03acf.css.map": "/Career-Portfolio/static/css/main.34b03acf.css.map",
+    "main.bbd87fd3.js.map": "/Career-Portfolio/static/js/main.bbd87fd3.js.map",
     "787.7da95b79.chunk.js.map": "/Career-Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8015fc65.css",
-    "static/js/main.99c4c18b.js"
+    "static/css/main.34b03acf.css",
+    "static/js/main.bbd87fd3.js"
   ]
 }
