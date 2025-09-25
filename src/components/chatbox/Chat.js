@@ -279,22 +279,22 @@ try {
   
 
     setTyping(true);
-    // const response = await fetch("https://api.openai.com/v1/chat/completions", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //     Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`, // ⚠️ replace with secure storage
-    //   },
-    //   body: JSON.stringify({
-    //     model: "gpt-4o-mini",
-    //     messages: [{ role: "user", content: prompt }],
-    //     temperature: 0,
-    //   }),
-    // });
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`, // ⚠️ replace with secure storage
+      },
+      body: JSON.stringify({
+        model: "gpt-4o-mini",
+        messages: [{ role: "user", content: prompt }],
+        temperature: 0,
+      }),
+    });
 
-    // const jsonData = await response.json();
-    // const answer = jsonData.choices[0].message.content;
-    var answer = await getChatAnswer(prompt)
+    const jsonData = await response.json();
+    var answer = jsonData.choices[0].message.content;
+    // var answer = await getChatAnswer(prompt)
     } catch (error) {
       setTyping(false);
       setConversation((prev) => [
