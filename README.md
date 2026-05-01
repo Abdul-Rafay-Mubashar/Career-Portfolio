@@ -1,43 +1,85 @@
-🌐 Developer Portfolio – Abdul Rafay
-📌 Overview
+# 🌐 Developer Portfolio – Abdul Rafay
 
-This is my personal developer portfolio website showcasing my work as a Software Engineer specializing in AI-powered systems, full-stack development, and automation engineering.
+### AI & Full-Stack Software Engineer Showcase
 
-The portfolio highlights real-world projects built using modern technologies such as React, Python, FastAPI, Node.js, and OpenAI APIs, including AI-driven applications, NLP systems, and workflow automation tools.
+---
 
+## 📌 Overview
+
+This is my **personal developer portfolio website** showcasing my work as a **Software Engineer specializing in AI systems, full-stack development, and automation engineering**.
+
+The portfolio highlights real-world projects built using modern technologies such as **React, Python, FastAPI, Node.js, and OpenAI APIs**, focusing on **AI-powered applications, NLP systems, and automation workflows**.
+
+---
+
+## 🧠 Focus Areas
 
 This portfolio showcases projects in:
 
-🤖 AI-powered systems (LLMs, NLP, automation)
-🎓 Learning Management System with AI-generated content
-📞 Voice-based hospital appointment booking assistant
-📊 Data scraping & automation pipelines
-🌐 Full-stack web applications
-🛠️ Tech Stack
+* 🤖 AI-powered systems (LLMs, NLP, automation)
+* 🎓 AI-driven Learning Management Systems
+* 📞 Voice-based AI assistants (hospital appointment system)
+* 📊 Data scraping & automation pipelines
+* 🌐 Full-stack web applications
 
+---
 
-🌍 Live Demo
+## 🚀 Key Projects Featured
+
+* 🎓 AI-Powered Learning Management System (Audio NLP)
+* 📞 VoiceCare AI – Intelligent Hospital Appointment Assistant
+* 📊 LinkedIn Lead Scraper & Automation System
+
+---
+
+## 🛠️ Tech Stack
+
+* React.js
+* Python
+* FastAPI
+* Node.js
+* OpenAI APIs
+* JavaScript (ES6+)
+* HTML5 / CSS3
+
+---
+
+## 🌍 Live Demo
 
 👉 https://abdul-rafay-mubashar.github.io/Career-Portfolio/
 
-💡 Purpose
+---
 
-This portfolio serves as a professional showcase of my skills, projects, and experience in AI engineering, full-stack development, and automation systems, designed for recruiters, collaborators, and clients.
+## 💡 Purpose
 
-🚀 Key Projects Featured
-🎓 AI-Powered Learning Management System (Audio NLP)
-📞 VoiceCare AI – Intelligent Hospital Appointment Assistant
-📊 LinkedIn Lead Scraper & Automation System
-📌 Future Improvements
-🌙 Dark/Light mode toggle
-🤖 AI chatbot assistant for portfolio
-🌍 Multi-language support
-📱 Mobile app version
+This portfolio serves as a **professional showcase of my skills, projects, and experience** in:
 
-📬 Contact
-Email: abdul.rafay.mubashar@gmail.com.com
-LinkedIn: https://www.linkedin.com/in/abdul-rafay-mubashar-software-engineer/
+* AI Engineering
+* Full-Stack Development
+* Automation Systems
 
-⭐ Summary
+It is designed for **recruiters, collaborators, and clients** to evaluate real-world engineering capabilities.
 
-A modern developer portfolio demonstrating expertise in AI systems, full-stack engineering, and automation solutions, focused on building scalable, real-world applications.
+---
+
+## 🚀 Future Improvements
+
+* 🌙 Dark / Light mode toggle
+* 🤖 AI chatbot assistant for portfolio navigation
+* 🌍 Multi-language support
+* 📱 Mobile app version
+
+---
+
+## 📬 Contact
+
+* 📧 Email: [abdul.rafay.mubashar@gmail.com](mailto:abdul.rafay.mubashar@gmail.com)
+* 🔗 LinkedIn: https://www.linkedin.com/in/abdul-rafay-mubashar-software-engineer/
+
+---
+
+## ⭐ Summary
+
+A **modern developer portfolio** demonstrating expertise in **AI systems, full-stack engineering, and automation solutions**, focused on building **scalable, real-world applications with production-level thinking**.
+
+---
