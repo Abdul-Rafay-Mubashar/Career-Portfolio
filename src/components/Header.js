@@ -53,7 +53,7 @@ const Header = () => {
                   <div className="link-boxes">GITHUB</div>
                 </a>
                 <a
-                  href="https://docs.google.com/document/d/1lrvcoZbtZblgUX7hRfQEgkHXdYLKl"
+                  href="https://drive.google.com/file/d/1QfBRN3Nr5z4qEhFTctQWE4LVwp_7LaNL/view?usp=drive_link"
                   target="_blank"
                 >
                   <div className="link-boxes">RESUME</div>

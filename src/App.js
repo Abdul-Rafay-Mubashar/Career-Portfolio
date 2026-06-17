@@ -12,12 +12,15 @@ import ContactUs from "./components/contactus/ContactUs";
 // import ControlledCarousel from "./components/bootstrapCarousel/ControlledCarousel";
 // import VideoPopup from "./components/videoPopup/VideoPopup";
 import Footer from "./components/footer/Footer.js";
+import AIChatbot from "./components/chat/chat.js";
+
 
 const App = () => {
   return (
     <>
       <div className="App">
         <div className="">
+          <AIChatbot/>
           <About />
           <Skill />
           <ContactUs />

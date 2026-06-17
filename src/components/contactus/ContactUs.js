@@ -143,7 +143,7 @@ const sendMsg = async () => {
                       style={{ color: "#1f4943" }}
                     ></h1>
                   </a>
-                  <a href="#" onClick={onButtonClick}>
+                  <a href="https://drive.google.com/file/d/1QfBRN3Nr5z4qEhFTctQWE4LVwp_7LaNL/view?usp=drive_link" onClick={onButtonClick}>
                     <h1 class="fa fa-file" style={{ color: "#1f4943" }}></h1>
                   </a>
                 </div>
