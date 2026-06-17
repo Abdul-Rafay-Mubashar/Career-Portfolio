@@ -26,7 +26,7 @@ const styles = {
     position: "fixed",
     right: "25px",
     bottom: "100px",
-    width: "440px",
+    width: window.innerWidth <= 768 ? "310px" : "440px",
     height: "470px",
     background: "white",
     borderRadius: "22px",
@@ -40,6 +40,8 @@ const styles = {
     transition: "opacity 0.35s, transform 0.35s",
     zIndex: 999,
   },
+
+
   chatVisible: {
     opacity: 1,
     transform: "translateY(0) scale(1)",
@@ -161,6 +163,8 @@ const styles = {
   micBtnRecording: {
     background: "red",
   },
+
+  
 };
 
 const API_BASE = "https://personal-pvq7kjnmh-abdul-rafays-projects-62206a19.vercel.app";
@@ -511,10 +515,11 @@ export default function AIChatbot() {
     }, 300);
   };
 
-  const chatStyle = {
-    ...styles.chatHidden,
-    ...(visible ? styles.chatVisible : {}),
-  };
+const chatStyle = {
+  ...styles.chatHidden,
+  width: window.innerWidth <= 768 ? "310px" : "440px",
+  ...(visible ? styles.chatVisible : {}),
+};
 
   return (
     <>

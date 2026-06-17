@@ -1,0 +1,24 @@
+.chatHidden {
+  position: fixed;
+  right: 25px;
+  bottom: 100px;
+  width: 440px;
+  height: 470px;
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+  opacity: 0;
+  transform: translateY(30px) scale(0.9);
+  pointer-events: none;
+  transition: opacity 0.35s, transform 0.35s;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .chatHidden {
+    width: 310px !important;
+  }
+}
