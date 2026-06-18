@@ -40,8 +40,6 @@ const styles = {
     transition: "opacity 0.35s, transform 0.35s",
     zIndex: 999,
   },
-
-
   chatVisible: {
     opacity: 1,
     transform: "translateY(0) scale(1)",
@@ -116,29 +114,28 @@ const styles = {
     fontSize: "14px",
   },
   bottom: {
-    // height: "60px",
-    // display: "flex",
-    // alignItems: "center",
-    // gap: "8px",
-    // padding: "10px",
-    // borderTop: "1px solid #ddd",
-    // flexShrink: 0,
-    height: "60px",
+    minHeight: "60px",
     display: "flex",
-    alignItems: "center",
+    alignItems: "flex-end",
     gap: "4px",
     padding: "10px",
     borderTop: "1px solid #ddd",
     flexShrink: 0,
   },
   input: {
-    height: "40px",
     flex: 1,
-    borderRadius: "25px",
+    borderRadius: "18px",
     border: "1px solid #ddd",
-    padding: "0 15px",
+    padding: "8px 15px",
     outline: "none",
     fontSize: "14px",
+    flexShrink: 1,
+    resize: "none",
+    minHeight: "40px",
+    maxHeight: "120px",
+    lineHeight: "1.5",
+    overflowY: "auto",
+    boxSizing: "border-box",
   },
   count: {
     fontSize: "11px",
@@ -170,8 +167,6 @@ const styles = {
   micBtnRecording: {
     background: "red",
   },
-
-
 };
 
 const API_BASE = "https://personal-pvq7kjnmh-abdul-rafays-projects-62206a19.vercel.app";
@@ -179,8 +174,6 @@ const API_BASE = "https://personal-pvq7kjnmh-abdul-rafays-projects-62206a19.verc
 // ─── Helper: format bot text with paragraphs + clickable links ───────────────
 function formatBotText(text) {
   const urlRegex = /(https?:\/\/[^\s]+)/g;
-
-
 
   return text.split("\n").map((line, i, arr) => {
     const parts = line.split(urlRegex);
@@ -228,51 +221,13 @@ export default function AIChatbot() {
   const historyRef = useRef([]);
 
   const messagesRef = useRef(null);
+  const textareaRef = useRef(null);
   const recorderRef = useRef(null);
   const chunksRef = useRef([]);
   const streamRef = useRef(null);
   const timerRef = useRef(null);
   const sendingRef = useRef(false);
 
-
-  useEffect(() => {
-    let userData = JSON.parse(localStorage.getItem("userData"));
-
-
-    if (!userData) {
-
-      userData = {
-        device_id: crypto.randomUUID(),
-        count: 0
-      };
-
-
-      localStorage.setItem(
-        "userData",
-        JSON.stringify(userData)
-      );
-
-    }
-
-
-    function checkLimit() {
-
-      let data = JSON.parse(
-        localStorage.getItem("userData")
-      );
-
-
-      if (data.count >= 100) {
-
-        setLimitReached(true)
-
-      }
-
-    }
-
-
-    checkLimit();
-  }, [])
   // Toggle chat open/close with animation
   const toggleChat = () => {
     if (open) {
@@ -295,30 +250,35 @@ export default function AIChatbot() {
     setMessages((prev) => [...prev, { type, text, isHtml }]);
   };
 
+  // Reset textarea height after sending
+  const resetTextarea = () => {
+    if (textareaRef.current) {
+      textareaRef.current.style.height = "40px";
+    }
+  };
+
   const sendMsg = async () => {
     let data = JSON.parse(
       localStorage.getItem("userData")
     );
 
-
     if (data.count >= 100) {
-      setLimitReached(true)
-
+      setLimitReached(true);
       return;
     }
 
-
     data.count += 1;
-
 
     localStorage.setItem(
       "userData",
       JSON.stringify(data)
     );
+
     if (!inputVal.trim() || loading) return;
 
     const val = inputVal.trim();
     setInputVal("");
+    resetTextarea();
     addMessage(val, "user");
 
     historyRef.current.push({ role: "user", content: val });
@@ -363,7 +323,10 @@ export default function AIChatbot() {
   };
 
   const handleKeyDown = (e) => {
-    if (e.key === "Enter") sendMsg();
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      sendMsg();
+    }
   };
 
   // Timer helpers
@@ -440,21 +403,18 @@ export default function AIChatbot() {
       localStorage.getItem("userData")
     );
 
-
     if (data.count >= 100) {
-      setLimitReached(true)
-
+      setLimitReached(true);
       return;
     }
 
-
     data.count += 1;
-
 
     localStorage.setItem(
       "userData",
       JSON.stringify(data)
     );
+
     if (sendingRef.current) return;
     sendingRef.current = true;
 
@@ -526,6 +486,11 @@ export default function AIChatbot() {
     ...styles.chatHidden,
     width: window.innerWidth <= 411 ? "330px" : "440px",
     ...(visible ? styles.chatVisible : {}),
+  };
+
+  const chatInput = {
+    ...styles.input,
+    ...(window.innerWidth <= 411 ? { maxWidth: "225px" } : {}),
   };
 
   return (
@@ -602,12 +567,18 @@ export default function AIChatbot() {
           {/* Text Input Bar */}
           {mode === "text" && (
             <div style={styles.bottom}>
-              <input
-                style={styles.input}
+              <textarea
+                ref={textareaRef}
+                style={chatInput}
                 placeholder={loading ? "Waiting for response..." : "Write message..."}
                 maxLength={500}
                 value={inputVal}
-                onChange={(e) => setInputVal(e.target.value)}
+                rows={1}
+                onChange={(e) => {
+                  setInputVal(e.target.value);
+                  e.target.style.height = "auto";
+                  e.target.style.height = Math.min(e.target.scrollHeight, 120) + "px";
+                }}
                 onKeyDown={handleKeyDown}
                 disabled={loading}
               />
