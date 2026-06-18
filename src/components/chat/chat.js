@@ -26,7 +26,7 @@ const styles = {
     position: "fixed",
     right: "25px",
     bottom: "100px",
-    width: window.innerWidth <= 768 ? "310px" : "440px",
+    width: window.innerWidth <= 411 ? "310px" : "440px",
     height: "470px",
     background: "white",
     borderRadius: "22px",
@@ -116,10 +116,17 @@ const styles = {
     fontSize: "14px",
   },
   bottom: {
+    // height: "60px",
+    // display: "flex",
+    // alignItems: "center",
+    // gap: "8px",
+    // padding: "10px",
+    // borderTop: "1px solid #ddd",
+    // flexShrink: 0,
     height: "60px",
     display: "flex",
     alignItems: "center",
-    gap: "8px",
+    gap: "4px",
     padding: "10px",
     borderTop: "1px solid #ddd",
     flexShrink: 0,
@@ -164,7 +171,7 @@ const styles = {
     background: "red",
   },
 
-  
+
 };
 
 const API_BASE = "https://personal-pvq7kjnmh-abdul-rafays-projects-62206a19.vercel.app";
@@ -289,25 +296,25 @@ export default function AIChatbot() {
   };
 
   const sendMsg = async () => {
-      let data = JSON.parse(
-          localStorage.getItem("userData")
-      );
+    let data = JSON.parse(
+      localStorage.getItem("userData")
+    );
 
 
-      if(data.count >= 100){
-        setLimitReached(true)
+    if (data.count >= 100) {
+      setLimitReached(true)
 
-        return;
-      }
-
-
-      data.count += 1;
+      return;
+    }
 
 
-      localStorage.setItem(
-          "userData",
-          JSON.stringify(data)
-      );
+    data.count += 1;
+
+
+    localStorage.setItem(
+      "userData",
+      JSON.stringify(data)
+    );
     if (!inputVal.trim() || loading) return;
 
     const val = inputVal.trim();
@@ -429,25 +436,25 @@ export default function AIChatbot() {
   };
 
   const sendVoice = () => {
-          let data = JSON.parse(
-          localStorage.getItem("userData")
-      );
+    let data = JSON.parse(
+      localStorage.getItem("userData")
+    );
 
 
-      if(data.count >= 100){
-        setLimitReached(true)
+    if (data.count >= 100) {
+      setLimitReached(true)
 
-        return;
-      }
-
-
-      data.count += 1;
+      return;
+    }
 
 
-      localStorage.setItem(
-          "userData",
-          JSON.stringify(data)
-      );
+    data.count += 1;
+
+
+    localStorage.setItem(
+      "userData",
+      JSON.stringify(data)
+    );
     if (sendingRef.current) return;
     sendingRef.current = true;
 
@@ -515,11 +522,11 @@ export default function AIChatbot() {
     }, 300);
   };
 
-const chatStyle = {
-  ...styles.chatHidden,
-  width: window.innerWidth <= 768 ? "310px" : "440px",
-  ...(visible ? styles.chatVisible : {}),
-};
+  const chatStyle = {
+    ...styles.chatHidden,
+    width: window.innerWidth <= 411 ? "330px" : "440px",
+    ...(visible ? styles.chatVisible : {}),
+  };
 
   return (
     <>
@@ -604,9 +611,16 @@ const chatStyle = {
                 onKeyDown={handleKeyDown}
                 disabled={loading}
               />
-              <span style={styles.count}>{inputVal.length}/500</span>
+              <span
+                style={{
+                  ...styles.count,
+                  display: window.innerWidth <= 411 ? "none" : "block",
+                }}
+              >
+                {inputVal.length}/500
+              </span>
               <button
-                style={{ ...styles.sendBtn, opacity:(loading || limitReached) ? 0.5 : 1 }}
+                style={{ ...styles.sendBtn, opacity: (loading || limitReached) ? 0.5 : 1 }}
                 onClick={sendMsg}
                 disabled={loading || limitReached}
               >
