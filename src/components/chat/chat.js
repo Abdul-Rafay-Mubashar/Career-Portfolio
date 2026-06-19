@@ -238,7 +238,29 @@ export default function AIChatbot() {
       setTimeout(() => setVisible(true), 10);
     }
   };
+  function getBrowserIdentity() {
+    let browserData = localStorage.getItem("userData");
 
+    if (!browserData) {
+      const newData = {
+        device_id: crypto.randomUUID(),
+        count: 0
+      };
+
+      localStorage.setItem(
+        "userData",
+        JSON.stringify(newData)
+      );
+
+      return newData;
+    }
+
+    return JSON.parse(browserData);
+  }
+
+  useEffect(() => {
+    getBrowserIdentity()
+  });
   // Scroll to bottom on new messages
   useEffect(() => {
     if (messagesRef.current) {
