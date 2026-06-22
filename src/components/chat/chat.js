@@ -173,7 +173,7 @@ const API_BASE = "https://personal-pvq7kjnmh-abdul-rafays-projects-62206a19.verc
 
 // ─── Helper: format bot text with paragraphs + clickable links ───────────────
 function formatBotText(text) {
-  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  const urlRegex = /(https?:\/\/[^\s]+?)(?=[.,!?;:]?(?:\s|$))/g;
 
   return text.split("\n").map((line, i, arr) => {
     const parts = line.split(urlRegex);
