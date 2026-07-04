@@ -169,7 +169,7 @@ const styles = {
   },
 };
 
-const API_BASE = "https://personal-pvq7kjnmh-abdul-rafays-projects-62206a19.vercel.app";
+const API_BASE = "https://personal-rag-lilac.vercel.app";
 
 // ─── Helper: format bot text with paragraphs + clickable links ───────────────
 function formatBotText(text) {
